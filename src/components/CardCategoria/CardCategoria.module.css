@@ -1,0 +1,13 @@
+.container {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.titulo {
+    color: var(--branco);
+    background-color: var(--preto);
+    padding: .5rem 1rem;
+    text-align: center;
+    margin-top: -2.5px;
+}

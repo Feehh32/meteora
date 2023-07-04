@@ -1,0 +1,40 @@
+.containerCard {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.cardIcon {
+    width: 56px;
+}
+
+.cardIcon img {
+    width: 100%;
+}
+
+.cardInfo {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    height: 80px;
+}
+
+.cardInfo p:first-child {
+    color: var(--amarelo);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4375rem;
+}
+
+.cardInfo p:last-child {
+    color: var(--branco);
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    white-space: pre;
+}
+
+@media screen and (min-width: 768px) {
+    .cardIcon {
+        width: 72px;
+    }
+}

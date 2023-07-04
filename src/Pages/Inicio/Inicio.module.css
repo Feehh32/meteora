@@ -1,0 +1,26 @@
+.principal {
+    display: flex;
+    flex-direction: column;
+}
+
+.principalContainer {
+    padding: 24px 26.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .principalContainer {
+        padding: 40px 39px;
+        gap: 45px;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .principalContainer {
+        padding: 72px 165px 84px 165px;
+        gap: 48px;
+    }
+}

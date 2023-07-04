@@ -1,0 +1,20 @@
+[
+    {
+        "icon": "/assets/allSizes/icone-pix.png",
+        "subtitle": "Pague pelo pix",
+        "paragraph": "Ganhe 5% OFF em\npagamentos via PIX ",
+        "id": "1"
+    },
+    {
+        "icon": "/assets/allSizes/icone-troca-gratis.png",
+        "subtitle": "Troca grátis",
+        "paragraph": "Fique livre para trocar em até\n30 dias.",
+        "id": "2"
+    },
+    {
+        "icon": "/assets/allSizes/icone-sustentabilidade.png",
+        "subtitle": "Sustentabilidade",
+        "paragraph": "Moda responsável, que respeita\no meio ambiente.",
+        "id": "3"
+    }
+]

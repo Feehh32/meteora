@@ -1,0 +1,35 @@
+.input {
+    padding: 9px 12px;
+    outline: none;
+    border: 2px solid var(--preto);
+    font-size: 13px;
+}
+
+.input::placeholder{
+    font-size: 13px;
+}
+
+.button {
+    border: 2px solid var(--preto);
+    background-color: transparent;
+    padding: 9px 12px;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    .input {
+        border: 2px solid var(--branco);
+        width: 140px;
+    }
+
+    .button{
+        border: 2px solid var(--branco);
+        color: var(--branco);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .input {
+        width: 170px;
+    }
+}

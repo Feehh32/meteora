@@ -1,0 +1,65 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardInfo {
+    border: 1px solid var(--cinza-claro);
+    border-top: none;
+    margin-top: -3.5px;
+    padding: .81rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 1rem;
+    width: 323px;
+}
+
+.cardInfo h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4375rem;
+}
+
+.cardInfo p:first-of-type {
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+}
+
+.cardInfo p:last-of-type {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4375rem;
+}
+
+.botaoModal {
+    text-decoration: none;
+    color: var(--branco);
+    padding: .56rem 1rem;
+    background-color: var(--violeta);
+    width: 102px;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 0.457px;
+    font-weight: 500;
+    border: none;
+}
+
+.botaoModal:hover {
+    opacity: .7;
+   
+}
+
+@media screen and (min-width: 768px) {
+    .cardInfo {
+        width: 329px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cardInfo {
+        width: 349px;
+    }
+}

@@ -1,0 +1,56 @@
+/* estilizaçao do container e fundo do modal */
+
+.modal {
+    border-radius: 4px;
+    padding: 0;
+    border: none;
+}
+
+.modal::backdrop {
+    background-color: rgb(52, 58, 64, .5);
+    backdrop-filter: blur(2.5px);
+}
+
+/* estilos do cabeçalho */
+
+.modalCabecalho {
+    background-color: var(--preto);
+    display: flex;
+    padding: 1rem 1.12rem;
+    text-align: start;
+    gap: 1.25rem;
+    align-items: center;
+    border-radius: 4px 4px 0 0;
+}
+
+.modalCabecalho>p {
+    display: block;
+    font-size: 1.25rem;
+    width: 211px;
+    font-weight: 500;
+    color: var(--branco);
+}
+
+@media screen and (min-width:768px){
+    .modalContainer {
+        max-width: 700px;
+        top: 0;
+        max-height: 100vh;
+    }
+
+    .modalCabecalho {
+        justify-content: space-between;
+    }
+
+    .modalCabecalho>p {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    .modalContainer {
+        top: 10%;
+    }
+}
+

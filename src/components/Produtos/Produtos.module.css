@@ -1,0 +1,34 @@
+.produtosContainer {
+    text-align: center;
+}
+
+.produtosContainer h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    padding-bottom: 1.88rem;
+}
+
+.produtosLista {
+    display: flex;
+    flex-direction: column;
+    gap: 1.88rem;
+}
+
+@media screen and (min-width: 768px) {
+    .produtosContainer h3 {
+        padding-bottom: 2rem;
+    }
+
+    .produtosLista {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 2rem;
+        grid-column-gap: 1.88rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .produtosLista {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

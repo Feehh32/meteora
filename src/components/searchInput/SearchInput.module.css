@@ -14,6 +14,13 @@
     background-color: transparent;
     padding: 9px 12px;
     font-weight: 700;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--branco);
+    color: var(--preto);
 }
 
 @media screen and (min-width: 768px) {
@@ -28,7 +35,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1080px) and (max-width: 1440px) {
     .input {
         width: 170px;
     }

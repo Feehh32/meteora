@@ -7,14 +7,17 @@ import { useMediaQuery } from 'react-responsive';
 
 function Banner() {
     const isTablet = useMediaQuery({ minWidth: "768px" });
-    const isDesktop = useMediaQuery({ minWidth: "1440px" });
+    const isDesktop = useMediaQuery({ minWidth: "1080px", maxWidth: '1440px' });
 
     return (
         <Carousel
             showThumbs={false}
             showStatus={false}
-            infiniteLoop={false}
+            infiniteLoop={true}
             className={styles.carousel}
+            touch={true}
+            autoPlay={true}
+            interval={4000}
         >
             <div className={styles.containerCarousel}>
                 {isDesktop ? (

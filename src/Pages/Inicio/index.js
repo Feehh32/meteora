@@ -7,6 +7,7 @@ import Facilidades from 'components/Facilidades';
 import Produtos from 'components/Produtos';
 import NewsLetterForm from 'components/newsletterForm';
 
+
 function Inicio() {
 	return (
 		<main className={styles.principal}>

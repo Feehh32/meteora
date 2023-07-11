@@ -1,9 +1,17 @@
 import React from 'react'
 import styles from './CardProduto.module.css'
 
-function CardProduto({ imagem, alt, titulo, descricao, preco, onClick}) {
+import { motion } from 'framer-motion';
+
+function CardProduto({ imagem, alt, titulo, descricao, preco, onClick }) {
     return (
-        <div className={styles.cardContainer}>
+        <motion.div
+            className={styles.cardContainer}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+        >
             <div>
                 <img src={imagem} alt={alt} />
             </div>
@@ -13,7 +21,7 @@ function CardProduto({ imagem, alt, titulo, descricao, preco, onClick}) {
                 <p>{`R$ ${parseFloat(preco).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}</p>
                 <button type='button' className={styles.botaoModal} onClick={onClick}>Ver mais</button>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

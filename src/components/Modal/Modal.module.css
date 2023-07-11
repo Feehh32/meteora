@@ -8,7 +8,7 @@
 
 .modal::backdrop {
     background-color: rgb(52, 58, 64, .5);
-    backdrop-filter: blur(2.5px);
+    backdrop-filter: blur(2px);
 }
 
 /* estilos do cabeçalho */
@@ -31,6 +31,16 @@
     color: var(--branco);
 }
 
+.closeIcon {
+    color: #6C757D; 
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.closeIcon:hover {
+    color: var(--amarelo)
+}
+
 @media screen and (min-width:768px){
     .modalContainer {
         max-width: 700px;
@@ -48,7 +58,7 @@
 
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1080px) and (max-width: 1440px) {
     .modalContainer {
         top: 10%;
     }

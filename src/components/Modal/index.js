@@ -1,8 +1,11 @@
 import { useEffect, useRef } from 'react';
 import styles from './Modal.module.css';
 
+import { AnimatePresence, motion } from 'framer-motion';
+
 import { BsCheckCircle } from 'react-icons/bs';
 import { IoClose } from 'react-icons/io5';
+import ScrollToTop from 'components/ScrollToTop';
 
 function Modal({ openModal, children, textoCabecalho, onClick, onClose }) {
     const modalRef = useRef(null);
@@ -15,13 +18,13 @@ function Modal({ openModal, children, textoCabecalho, onClick, onClose }) {
             e.clientY < modalDimension.top ||
             e.clientY > modalDimension.bottom
         ) {
-            e.currentTarget.close();
-        } 
+            onClose && onClose()
+        }
     }
 
     useEffect(() => {
         const fecharModal = () => {
-            onClose && onClose()
+            onClose && onClose();
         }
 
         const modal = modalRef.current;
@@ -30,31 +33,48 @@ function Modal({ openModal, children, textoCabecalho, onClick, onClose }) {
         return () => {
             modal?.removeEventListener('close', fecharModal);
         }
-        
-    },[onClose])
+
+    }, [onClose])
 
     useEffect(() => {
+        const modal = modalRef.current
 
         if (openModal && !modalRef.current?.open) {
-            modalRef.current?.showModal();
+            modal?.showModal();
 
         } else if (!openModal && modalRef.current?.open) {
-            modalRef.current?.close();
+            onClose && onClose()
 
         }
 
-    }, [openModal]);
+    }, [openModal, onClose]);
 
     return (
-        <dialog className={styles.modal} ref={modalRef} aria-labelledby='dialog-title' onClick={(e) => aoClicarFora(e)}>
-            <div className={styles.modalCabecalho}>
-                <BsCheckCircle size={32} style={{ color: 'var(--amarelo)' }} />
-                <p id="dialog-title">{textoCabecalho}</p>
-                <IoClose size={26} style={{ color: '#6C757D', cursor: "pointer" }} onClick={onClick} aria-label="Fechar modal" />
-            </div>
-            {children}
-        </dialog>
+        <>
+            <AnimatePresence>
+                {openModal && (
+                    <motion.dialog
+                        className={styles.modal}
+                        ref={modalRef}
+                        aria-labelledby='dialog-title'
+                        onClick={(e) => aoClicarFora(e)}
+                        initial={{ opacity: 0, y: "100vh" }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: "100vh" }}
+                        transition={{ duration: 1, type: "spring", stiffness: 800, damping: 45 }}
+                    >
+                        <div className={styles.modalCabecalho}>
+                            <BsCheckCircle size={32} style={{ color: 'var(--amarelo)' }} />
+                            <p id="dialog-title">{textoCabecalho}</p>
+                            <IoClose size={26} className={styles.closeIcon} onClick={onClick} aria-label="Fechar modal" />
+                        </div>
+                        {children}
+                    </motion.dialog>
+                )}
+            </AnimatePresence>
+            <ScrollToTop />
+        </>
     )
 }
 
-export default Modal
+export default Modal;

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './ProdutosModal.module.css';
 
+
 function ProdutosModal({imagem, nomeProduto, produtoDescricao, preco}) {
 
     return (

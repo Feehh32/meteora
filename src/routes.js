@@ -7,11 +7,11 @@ import Inicio from 'Pages/Inicio';
 function AppRoutes() {
 	return (
 		<BrowserRouter>
-			<Routes>
-				<Route path='/' element={<PaginaBase />}>
-					<Route index element={<Inicio />}></Route>
-				</Route>
-			</Routes>
+				<Routes>
+					<Route path='/' element={<PaginaBase />}>
+						<Route index element={<Inicio />}></Route>
+					</Route>
+				</Routes>
 		</BrowserRouter>
 	)
 }

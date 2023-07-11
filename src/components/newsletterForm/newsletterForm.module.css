@@ -3,7 +3,6 @@
     padding: 1.5rem 1rem;
     text-align: center;
     width: 321px;
-    /* margin-top: ; */
     margin: 2.5rem auto 0 auto;
 }
 
@@ -39,6 +38,18 @@
     opacity: .7;
 }
 
+.msgError {
+    margin-top: .25rem;
+    text-align: start;
+    padding: .5rem;
+    display: block;
+    color: red;
+    font-size: .75rem;
+    background-color: #dfaeae;
+    width: 100%;
+    border-radius: 4px;
+}
+
 @media screen and (min-width: 768px) {
     .formContainer {
         padding: 2.5rem 4.5rem;
@@ -52,9 +63,14 @@
     .inputForm {
         width: 357px;
     }
+
+    .msgError {
+        width: 440px;
+        margin: .25rem auto 0 auto;
+    }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1080px) and (max-width: 1440px) {
     .formContainer{
         padding: 40px;
         width: 697px;

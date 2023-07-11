@@ -6,7 +6,7 @@ import { useMediaQuery } from 'react-responsive';
 
 function Logo() {
 	const isTablet = useMediaQuery({minWidth: "768px"});
-	const isDesktop = useMediaQuery({minWidth: "1440px"});
+	const isDesktop = useMediaQuery({minWidth: "1080px"});
 	
 	return (
 		<Link to="/" className={styles.container}>

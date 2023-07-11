@@ -1,109 +1,56 @@
-{
-    "categorias": [
-        {
-            "mobile": [
-                {
-                    "imagem": "/assets/mobile/categoria-calcados-mobile.png",
-                    "titulo": "Calçados",
-                    "id": "1"
-                },
-                {
-                    "imagem": "/assets/mobile/categoria-bolsas-mobile.png",
-                    "titulo": "Bolsas",
-                    "id": "2"
-                },
-                {
-                    "imagem": "/assets/mobile/categoria-calcas-mobile.png",
-                    "titulo": "Calças",
-                    "id": "3"
-                },
-                {
-                    "imagem": "/assets/mobile/categoria-camiseta-mobile.png",
-                    "titulo": "Camisetas",
-                    "id": "4"
-                },
-                {
-                    "imagem": "/assets/mobile/categoria-casacos-mobile.png",
-                    "titulo": "Casacos",
-                    "id": "5"
-                },
-                {
-                    "imagem": "/assets/mobile/categoria-oculos-mobile.png",
-                    "titulo": "Óculos",
-                    "id": "6"
-                }
-                
-            ]
+[
+    {
+        "imagem": {
+            "mobile": "/assets/mobile/categoria-calcados-mobile.png",
+            "tablet": "/assets/tablet/categoria-calcados-tablet.png",
+            "desktop": "/assets/desktop/categoria-calcados-desktop.png"
         },
-        {
-            "tablet": [
-                {
-                    "imagem": "/assets/tablet/categoria-calcados-tablet.png",
-                    "titulo": "Calçados",
-                    "id": "1"
-                },
-                {
-                    "imagem": "/assets/tablet/categoria-bolsas-tablet.png",
-                    "titulo": "Bolsas",
-                    "id": "2"
-                },
-                {
-                    "imagem": "/assets/tablet/categoria-calcas-tablet.png",
-                    "titulo": "Calças",
-                    "id": "3"
-                },
-                {
-                    "imagem": "/assets/tablet/categoria-camiseta-tablet.png",
-                    "titulo": "Camisetas",
-                    "id": "4"
-                },
-                {
-                    "imagem": "/assets/tablet/categoria-casacos-tablet.png",
-                    "titulo": "Casacos",
-                    "id": "5"
-                },
-                {
-                    "imagem": "/assets/tablet/categoria-oculos-tablet.png",
-                    "titulo": "Óculos",
-                    "id": "6"
-                }
-                
-            ]
+        "titulo": "Calçados",
+        "id": "1"
+    },
+    {
+        "imagem": {
+            "mobile": "/assets/mobile/categoria-bolsas-mobile.png",
+            "tablet": "/assets/tablet/categoria-bolsas-tablet.png",
+            "desktop": "/assets/desktop/categoria-bolsas-desktop.png"
         },
-        {
-            "desktop": [
-                {
-                    "imagem": "/assets/desktop/categoria-calcados-desktop.png",
-                    "titulo": "Calçados",
-                    "id": "1"
-                },
-                {
-                    "imagem": "/assets/desktop/categoria-bolsas-desktop.png",
-                    "titulo": "Bolsas",
-                    "id": "2"
-                },
-                {
-                    "imagem": "/assets/desktop/categoria-calcas-desktop.png",
-                    "titulo": "Calças",
-                    "id": "3"
-                },
-                {
-                    "imagem": "/assets/desktop/categoria-camiseta-desktop.png",
-                    "titulo": "Camisetas",
-                    "id": "4"
-                },
-                {
-                    "imagem": "/assets/desktop/categoria-casacos-desktop.png",
-                    "titulo": "Casacos",
-                    "id": "5"
-                },
-                {
-                    "imagem": "/assets/desktop/categoria-oculos-desktop.png",
-                    "titulo": "Óculos",
-                    "id": "6"
-                }
-                
-            ]
-        }
-    ]
-}
+        "titulo": "Bolsas",
+        "id": "2"
+    },
+    {
+        "imagem": {
+            "mobile": "/assets/mobile/categoria-calcas-mobile.png",
+            "tablet": "/assets/tablet/categoria-calcas-tablet.png",
+            "desktop": "/assets/desktop/categoria-calcas-desktop.png"
+        },
+        "titulo": "Calças",
+        "id": "3"
+    },
+    {
+        "imagem": {
+            "mobile": "/assets/mobile/categoria-camiseta-mobile.png",
+            "tablet": "/assets/tablet/categoria-camiseta-tablet.png",
+            "desktop": "/assets/desktop/categoria-camiseta-desktop.png"
+        },
+        "titulo": "Camisetas",
+        "id": "4"
+    },
+    {
+        "imagem": {
+            "mobile": "/assets/mobile/categoria-casacos-mobile.png",
+            "tablet": "/assets/tablet/categoria-casacos-tablet.png",
+            "desktop": "/assets/desktop/categoria-casacos-desktop.png"
+        },
+        "titulo": "Casacos",
+        "id": "5"
+    },
+    {
+        "imagem": {
+            "mobile": "/assets/mobile/categoria-oculos-mobile.png",
+            "tablet": "/assets/tablet/categoria-oculos-tablet.png",
+            "desktop": "/assets/desktop/categoria-oculos-desktop.png"
+        },
+        "titulo": "Óculos",
+        "id": "6"
+    }
+]

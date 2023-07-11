@@ -1,5 +1,7 @@
 import React from 'react';
+
 import styles from './Cabecalho.module.css';
+
 import Logo from 'components/Logo';
 import MenuHamburguer from 'components/Menu-Hamburger';
 import SearchInput from 'components/searchInput';

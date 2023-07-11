@@ -76,7 +76,7 @@ li:hover .link {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1080px) and (max-width: 1440px) {
     .menu {
         gap: 40px;
     }

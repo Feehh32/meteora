@@ -5,6 +5,7 @@
 .categoriaClicada {
     border: 3px solid var(--violeta);
     position: relative;
+    width: fit-content;
 }
 
 .botaoFechar {
@@ -18,8 +19,8 @@
     border: none;
     font-size: 1rem;
     text-align: center;
-    left: 80%;
-    top: 0;
+    left: 93%;
+    top: -5%;
     transition: all 300ms ease-in-out;
     cursor: pointer;
 }
